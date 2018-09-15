@@ -1,6 +1,6 @@
 # ApqExample
 
-Full example of integration Apq with Absinthe
+Full example of integration [Apq](https://github.com/maartenvanvliet/apq) with Absinthe
 
 ## Installation
 

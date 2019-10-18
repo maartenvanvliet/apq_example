@@ -11,7 +11,12 @@ import gql from "graphql-tag";
 import { ApolloProvider } from "react-apollo";
 import { Query } from "react-apollo";
 
-const link = createPersistedQueryLink().concat(createHttpLink({ uri: () => "http://localhost:4001/api" }));
+// Switch to test GET support for APQ
+const useGETForHashedQueries = true
+
+const link = createPersistedQueryLink({
+  useGETForHashedQueries: useGETForHashedQueries
+}).concat(createHttpLink({ uri: () => "http://localhost:4001/api" }));
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),

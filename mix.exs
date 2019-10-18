@@ -31,7 +31,8 @@ defmodule ApqExample.MixProject do
       {:cowboy, "~> 2.0"},
       {:plug, "~> 1.0"},
       {:cachex, "~> 3.0"},
-      {:jason, "~> 1.1"}
+      {:jason, "~> 1.1"},
+      {:telemetry, "~> 0.4.0"}
     ]
   end
 end

@@ -12,7 +12,7 @@ import { ApolloProvider } from "react-apollo";
 import { Query } from "react-apollo";
 
 // Switch to test GET support for APQ
-const useGETForHashedQueries = true
+const useGETForHashedQueries = false
 
 const link = createPersistedQueryLink({
   useGETForHashedQueries: useGETForHashedQueries
